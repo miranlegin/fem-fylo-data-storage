@@ -1,1 +1,78 @@
 // general styling
+
+body {
+  font-size: $fs-base;
+  font-family: $ff-base;
+  background-color: $very-dark-blue;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding-inline: 1.5rem;
+
+  @media (min-width: 768px) {
+    background-image: url(../images/bg-desktop.png);
+    background-position: 100% 100%;
+    background-size: auto 52.5vh;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 57.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 1.875rem;
+  }
+}
+
+.branding {
+  width: 100%;
+  background-color: $dark-blue;
+  border-radius: $br-400;
+  border-top-right-radius: $br-900;
+  padding: 2.5rem;
+  box-shadow: 0 0 8rem rgba($very-dark-blue, 0.75);
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 2rem;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    aspect-ratio: 1;
+    background-color: $very-dark-blue;
+    border-radius: 0.625rem;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+  }
+}
+
+.fw-700 {
+  font-weight: $fw-700;
+}

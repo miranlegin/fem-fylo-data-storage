@@ -1,3 +1,27 @@
-{{#each list }}
-{{> repeater }}
-{{/each }}
+<main class="container">
+    <div class="branding">
+        <img src="images/logo.svg" alt="Fylo logo">
+        <ul>
+            <li><svg class="icon icon-icon-document">
+                    <use xlink:href="#icon-icon-document"></use>
+                </svg></li>
+            <li><svg class="icon icon-icon-folder">
+                    <use xlink:href="#icon-icon-folder"></use>
+                </svg></li>
+            <li><svg class="icon icon-icon-upload">
+                    <use xlink:href="#icon-icon-upload"></use>
+                </svg></li>
+        </ul>
+    </div>
+    <div class="progress">
+        <div>You’ve used <span class="fw-700"><span class="counter"></span> GB</span> of your storage</div>
+        <div class="remaining"><span class="value">185</span> GB Left</div>
+        <div class="progress-track">
+            <div class="progress-thumb"></div>
+        </div>
+        <div class="progress-timeline">
+            <div class="progress-start">0 GB</div>
+            <div class="progress-end">1000 GB</div>
+        </div>
+    </div>
+</main>

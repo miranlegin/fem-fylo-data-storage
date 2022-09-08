@@ -1,1 +1,81 @@
 // variables
+
+// colors
+
+// gradient
+$gradient1: hsl(6, 100%, 80%);
+$gradient2: hsl(335, 100%, 65%);
+
+// neutral
+
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+
+// typography
+
+// 14px
+$fs-base: 0.875rem;
+$ff-base: 'Raleway', sans-serif;
+$fw-400: 400;
+$fw-700: 700;
+
+// border radius
+
+$br-100: 0.1875rem;
+$br-400: 0.675rem;
+$br-900: 6.275rem;
+
+// triangle
+
+$triangle-border: 0.6875rem;
+
+$thumb-size: 0.875rem;
+$thumb-padding: 0.1875rem;
+
+// animation
+
+$animation-duration: 3s;
+$thumb-easing: cubic-bezier(0.5, 1, 0.89, 1);
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes thumb {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 81.5%;
+  }
+}
+
+@keyframes counter {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: 815;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateY(-75%);
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/compiled.css">
+</head>
+
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-icon-upload" viewBox="0 0 48 32">
+                <path fill="#697ed4" style="fill: var(--color1, #697ed4)"
+                    d="M38.8 12c-1.4-6.8-7.4-12-14.8-12-5.8 0-10.8 3.2-13.2 8-6.2 0.8-10.8 5.8-10.8 12 0 6.6 5.4 12 12 12h26c5.6 0 10-4.4 10-10 0-5.2-4.2-9.6-9.2-10zM28 18v8h-8v-8h-6l10-10 10 10h-6z">
+                </path>
+            </symbol>
+            <symbol id="icon-icon-document" viewBox="0 0 27 32">
+                <path fill="#697ed4" style="fill: var(--color1, #697ed4)"
+                    d="M16.037 0h-12.789c0 0-0 0-0 0-1.758 0-3.183 1.425-3.183 3.183 0 0.005 0 0.010 0 0.015v-0.001l-0.016 25.58c-0 0.004-0 0.009-0 0.015 0 1.758 1.425 3.183 3.183 3.183 0 0 0 0 0 0h19.2c0 0 0.001 0 0.001 0 1.765 0 3.196-1.431 3.196-3.196 0-0 0-0.001 0-0.001v0-19.185l-9.592-9.592zM14.44 11.191v-8.791l8.793 8.792h-8.793z">
+                </path>
+            </symbol>
+            <symbol id="icon-icon-folder" viewBox="0 0 38 32">
+                <path fill="#697ed4" style="fill: var(--color1, #697ed4)"
+                    d="M34.56 3.84h-15.36l-3.84-3.84h-11.52c-2.111 0.002-3.821 1.713-3.821 3.824 0 0.006 0 0.011 0 0.017v-0.001l-0.019 23.040c0 2.121 1.719 3.84 3.84 3.84h30.72c2.121 0 3.84-1.719 3.84-3.84v0-19.2c0-2.121-1.719-3.84-3.84-3.84v0z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>    <main class="container">
+    <div class="branding">
+        <img src="images/logo.svg" alt="Fylo logo">
+        <ul>
+            <li><svg class="icon icon-icon-document">
+                    <use xlink:href="#icon-icon-document"></use>
+                </svg></li>
+            <li><svg class="icon icon-icon-folder">
+                    <use xlink:href="#icon-icon-folder"></use>
+                </svg></li>
+            <li><svg class="icon icon-icon-upload">
+                    <use xlink:href="#icon-icon-upload"></use>
+                </svg></li>
+        </ul>
+    </div>
+    <div class="progress">
+        <div>You’ve used <span class="fw-700"><span class="counter"></span> GB</span> of your storage</div>
+        <div class="remaining"><span class="value">185</span> GB Left</div>
+        <div class="progress-track">
+            <div class="progress-thumb"></div>
+        </div>
+        <div class="progress-timeline">
+            <div class="progress-start">0 GB</div>
+            <div class="progress-end">1000 GB</div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

@@ -48,6 +48,7 @@ body {
 
   @media (min-width: 768px) {
     width: 350px;
+    flex-shrink: 0;
   }
 
   ul {
